@@ -1,0 +1,323 @@
+:root {
+    --bookiBlue: grey;
+    --bookiLightBlue: #DEEBFF;
+    --bookiGrey: #F2F2F2;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    display: grid;
+
+}
+.heading {
+    font-weight: 900;
+    padding: 0px;
+    margin: 0px;
+}
+
+.heading-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.img-ohmyfood {
+    width: 100%;
+    height: 140%;
+    padding-inline-start: 540px;
+
+}
+
+.NavListItem {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+nav {
+    background-color: #f2f2f2;
+    height: 150px;
+}
+.SearchBtn .fa-search {
+    display: none;
+    width: 100%;
+}
+
+
+.SearchInput {
+    min-height: 42px;
+    width: 20em;
+    border: 1px solid #F2F2F2;
+    display: flex;
+
+}
+
+
+
+.SearchInput .fa-location-dot {
+    display: flex;
+    justify-content: center;
+    color: black;
+  
+}
+
+.SearchInput .SearchTxt {
+    color: black;
+    font-weight: bolder;
+
+}
+
+.SearchInput .SearchBtn {
+    width: 100%;
+    background-color: lightgrey;
+    font-weight: bolder;
+   
+}
+
+.SearchBtn i {
+    background-color: transparent;
+}
+
+
+.SearchInput .SearchBtn:hover,
+.SearchInput .SearchBtn:active {
+    background-color: grey;
+  
+}
+
+.btn {
+    color: var(--bookiBlue);
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 0.8s;
+ 
+}
+
+.btn1 {
+    color: white;
+    background-color: #FF79DA;
+    border-radius: 20px;
+    height: 48px;
+    width: 245px;
+   
+}
+
+
+.btn1:hover {
+    background-color: #9356DC;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.FiltersWrapper {
+    align-items: center;
+}
+
+.noListStyle {
+    list-style: none;
+    list-style-type: none;
+}
+
+.noListStyle {
+    gap: 20px;
+    padding-inline-end: 70px;
+}
+
+
+.FiltersWrapper ul li {
+    background-color:white;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    padding-right: 160px;
+    width: 440px;
+
+}
+
+
+.FiltersWrapper ul li i {
+    width: 70px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    display: flex;
+flex-direction: row;
+}
+
+
+i:hover {
+    color: #99E2D0;
+
+}
+
+
+
+.wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.FiltersWrapper ul li:hover,
+.FiltersWrapper ul li:active {
+    background-color: #99E2D0;
+}
+
+
+.FiltersSection {
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+
+
+label {
+    font-weight: 900;
+    padding-inline-start:15px;
+
+}
+
+
+.Rest_Section {
+    width: 100%;
+    height: 100%;
+   
+   
+}
+.Rest_Section {
+    width: 100%;
+    background-color:#F2F2F2;
+}
+
+
+.Rest_Section .Card {
+    border-radius: 10px;
+    height: 350px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #00000080;
+    margin: 15px;
+    background-color: transparent;
+}
+
+.Rest_Section .Card .ImageWrapper {
+    height: 55%;
+    margin-bottom: 10px;
+}
+
+
+
+.Rest_Section .Image {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+  
+}
+
+.Rest_Section .Card h3,
+.Rest_Section .Card p,
+.Rest_Section .Card .RateWrapper {
+    padding-left: 10px;
+    justify-content: end;
+    display: flex;
+    padding-inline-end: 30px;
+    padding-top: 6px;
+}
+
+
+.wrapper,
+.FiltersSection,
+.FiltersWrapper,
+.FiltersWrapper ul {
+    display: flex;
+}
+
+
+.FooterWrapper {
+    gap: 40px;
+    margin-top: 160px;
+}
+
+
+
+footer.FooterWrapper {
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-block-start: 20px;
+}
+
+
+
+@media only screen and (max-width:768px)  {
+
+
+
+.Rest_Section {
+    width: 100%;
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+
+}
+  .Rest_Section .Card {
+    width: 23%;
+    height: 12%;
+   
+  }
+      .Rest_Section .Image {
+         width: 100%;
+         height: 120%;
+         object-fit: cover;
+      }
+
+
+    }
+
+    /* Tablet version */
+    @media only screen and (min-width: 820px) {
+
+
+
+
+    }
+
+    /* Desktp version */
+    @media only screen and (min-width:962px) {
+       
+
+
+    }
+  
+  
+  
+  
+ 
