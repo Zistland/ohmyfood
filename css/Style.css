@@ -9,303 +9,24 @@
 
 }
 
-.SearchInput .SearchBtn:hover,
-.SearchInput .SearchBtn:active {
-    background-color: grey;
+h1,
+h2 {
+    font-family: 'Shrikhand', sans-serif;
 }
 
 
 
-
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: white;
     color: black;
     font-size: medium;
-    display: grid;
-
-}
-
-
-.NavListItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 3px solid transparent;
-    height: 100%;
-
-}
-
-nav {
-    background-color: #f2f2f2;
-    height: 150px;
-}
-
-
-
-.container {
-    text-align: center;
-    margin-top: 360px;
-}
-
-.btn {
-    color: var(--bookiBlue);
-    padding: 10px 20px;
-    font-size: 20px;
-    transition: 0.8s;
-}
-
-.btn1,
-.btn2 {
-    color: white;
-    background-color: #FF79DA;
-}
-
-
-
-.btn1:hover,
-.btn2:hover {
-    background-color: #9356DC;
-}
-
-
-
-section h2 {
-    width: 100%;
-    color: black;
-
-}
-
-
-label {
-    font-weight: 900;
-    padding-inline-start: 0px;
-
-}
-
-p {
-    font-weight: 200;
-}
-
-.Rest_Section {
-    width: 100%;
-    margin: 0px;
-    gap: 40px;
-}
-
-.Rest_Section .Card {
-    background-color: white;
-    border-radius: 10px;
-    width: 265px;
-    height: 200px;
-    box-sizing: border-box;
-    font-size: smaller;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    overflow: hidden;
-    row-gap: 3px;
-    box-shadow: 0 0 20px #00000080;
-}
-
-.Rest_Section .Card .ImageWrapper {
-    height: 55%;
-    margin-bottom: 10px;
-}
-
-.Rest_Section h3 {
-    width: 100%;
-}
-
-.Rest_Section .Image {
-    width: 100%;
-    height: 110%;
-    object-fit: cover;
-    padding-block-start: 4px;
-    padding-inline-start: 3px;
-    padding-inline-end: 4px;
-    border-radius: 10px;
-}
-
-
-
-.RateWrapper {
-    display: flex;
-    width: 100%;
-}
-
-.Rest_Section .Card h3,
-.Rest_Section .Card p,
-.Rest_Section .Card .RateWrapper {
-    padding-left: 10px;
-    padding-top: 6px;
-}
-
-
-.Rest_Section .Card h3,
-.Rest_Section .Card p,
-.Rest_Section .Card .RateWrapper {
-    padding-left: 10px;
-}
-
-
-ul {
-    color: black;
-}
-
-.Card {
-    border: 1px solid #F2F2F2;
-
-}
-
-.Card h5 {
-    min-height: 30px;
-    max-height: 30px;
-    padding-left: 10px;
-}
-
-.SearchInput {
-    min-height: 42px;
-    width: 20em;
-    border: 1px solid #F2F2F2;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    box-sizing: border-box;
-
-}
-
-h1 {
-    font: Caprasimo;
-    font-weight: 1000;
-    font-style: bolder;
-}
-
-.SearchInput .fa-location-dot {
-    min-width: 42px;
-    width: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 35px;
-    border-radius: 1px;
-    color: black;
-    box-sizing: border-box;
-}
-
-.SearchInput .SearchTxt {
-    color: black;
-    font-weight: bolder;
-
-}
-
-.SearchInput .SearchBtn {
-    width: 100%;
-    background-color: lightgrey;
-    color: ;
-    font-weight: bolder;
-}
-
-.SearchBtn i {
-    background-color: transparent;
-}
-
-body {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
-}
-
-.FooterWrapper,
-.Acc_Section,
-.wrapper,
-.FiltersSection,
-.FiltersWrapper,
-.FiltersWrapper ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    padding-inline-start: 20px;
-
-
-}
-
-
-
-.FooterWrapper {
-    gap: 40px;
-    margin-top: 160px;
-}
-
-
-.Rest_Section {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-
-
-
-a {
-    text-decoration: none;
-}
-
-.FiltersWrapper {
-    align-items: center;
-}
-
-.noListStyle {
-    list-style: none;
-    list-style-type: none;
-}
-
-
-
-
-.FiltersWrapper ul li {
-    background-color: #F2F2F2;
-    border-radius: 1em;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-weight: 800;
-    padding-right: 160px;
-    width: 440px;
-
-}
-
-
-.FiltersWrapper ul li i {
-    width: 70px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
-
-}
-
-.FiltersSection {
-    width: 100%;
     flex-direction: column;
 
 }
-
-
-
-.Rest_Section {
-    width: 100%;
-}
-
-
-.noListStyle {
-    gap: 20px;
-    padding-inline-end: 70px;
-}
-
 
 .heading {
     font-weight: 900;
@@ -321,11 +42,137 @@ a {
 }
 
 
-.Rest_Section i {
-    background-color: transparent;
-    color: var(--bookiBlue);
+.img-ohmyfood {
+    width: 100%;
+    height: 100%;
 }
 
+.NavListItem {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+nav {
+    background-color: #f2f2f2;
+    height: 150px;
+}
+
+.SearchBtn .fa-search {
+    display: none;
+    width: 100%;
+}
+
+
+.SearchInput {
+    min-height: 42px;
+    min-width: 20em;
+    width: 100%;
+
+    border: 1px solid #F2F2F2;
+    display: flex;
+
+}
+
+
+
+.SearchInput .fa-location-dot {
+    display: flex;
+    justify-content: center;
+    color: black;
+
+}
+
+.SearchInput .SearchTxt {
+    color: black;
+    font-weight: bolder;
+
+}
+
+.SearchInput .SearchBtn {
+    width: 100%;
+    background-color: lightgrey;
+    font-weight: bolder;
+
+}
+
+.SearchBtn i {
+    background-color: transparent;
+}
+
+
+.SearchInput .SearchBtn:hover,
+.SearchInput .SearchBtn:active {
+    background-color: grey;
+
+}
+
+.btn {
+    color: var(--bookiBlue);
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: 0.8s;
+
+}
+
+.btn1 {
+    color: white;
+    background-color: #FF79DA;
+    border-radius: 20px;
+    height: 48px;
+    width: 245px;
+
+}
+
+
+.btn1:hover {
+    background-color: #9356DC;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.FiltersWrapper {
+    align-items: center;
+}
+
+.noListStyle {
+    list-style: none;
+    list-style-type: none;
+}
+
+.noListStyle {
+    gap: 20px;
+    padding-inline-end: 70px;
+}
+
+
+.FiltersWrapper ul li {
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 800;
+    padding-right: 10px;
+    min-width: 280px;
+    max-width: 280px;
+
+}
+
+
+.FiltersWrapper ul li i {
+    width: 70px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+
+}
 
 
 i:hover {
@@ -333,18 +180,14 @@ i:hover {
 
 }
 
-.FlexGrid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 440px;
-}
+
 
 .wrapper {
     width: 100%;
     justify-content: space-between;
+    justify-content: center;
+    min-height: 60px;
+    align-items: center;
 }
 
 .wrapper ul {
@@ -360,6 +203,91 @@ i:hover {
 }
 
 
+.FiltersSection {
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+
+
+label {
+    font-weight: 900;
+    padding-inline-start: 15px;
+
+}
+
+
+.Rest_Section {
+    width: 100%;
+
+
+}
+
+.Rest_Section {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.FiltersSection nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    gap: 10px;
+    text-align: center;
+}
+
+.Rest_Section .Card {
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #00000080;
+    background-color: transparent;
+    margin: 20px;
+    height: 190px;
+}
+
+.Rest_Section .Card .ImageWrapper {
+    height: 55%;
+    margin-bottom: 10px;
+}
+
+
+
+.Rest_Section .Image {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+
+}
+
+.Rest_Section .Card h3,
+.Rest_Section .Card p,
+.Rest_Section .Card .RateWrapper {
+    padding-left: 10px;
+    justify-content: end;
+    display: flex;
+    padding-inline-end: 30px;
+    padding-top: 6px;
+}
+
+
+.wrapper,
+.FiltersSection,
+.FiltersWrapper,
+.FiltersWrapper ul {
+    display: flex;
+}
+
+
+.FooterWrapper {
+    gap: 40px;
+    margin-top: 160px;
+}
+
+
 
 footer.FooterWrapper {
     background-color: #333333;
@@ -370,193 +298,51 @@ footer.FooterWrapper {
 }
 
 
-.img-ohmyfood {
-    width: 70%;
-    height: 100%;
-
-}
-
-ul {
-    overflow: hidden;
-}
-
-
-
-
-.SearchBtn .fa-search {
-    display: none;
-}
-
-
 
 @media only screen and (max-width:768px) {
-    body {
-        padding: 0px;
-    }
 
-    .TextWrap {
-        display: none;
-    }
-
-    .SearchBtn .fa-search {
-        display: inline;
-        color: white;
-        width: 15%;
-    }
-
-    .SearchInput .SearchBtn {
-        width: 15%;
-        border-radius: 10px;
-    }
-
-    .SearchInput .fa-location-dot {
-        width: 15%;
-        border-radius: 5px;
-    }
-
-    .wrapper {
-        padding-inline-start: 0%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .wrapper h1 {
-        width: 100%;
-        height: 140px;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .img-ohmyfood {
-
-        object-fit: scale-down;
-        width: 40%;
-        height: 40%;
-        margin: 100px;
-    }
-
-    .FiltersWrapper ul li {
-        background-color: #F2F2F2;
-        border-radius: 1em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 800;
-        padding-right: 170px;
-        width: 440px;
-    }
-
-
-
-    .search-container {
-        margin: 0;
-        padding: 0;
-        gap: 0;
-    }
-
-    .wrapper nav {
+    .FiltersWrapper {
+        flex-wrap: wrap;
         width: 100%;
         height: fit-content;
-    }
-
-    .NavListItem {
-        width: 50%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 0px solid transparent;
-        border-bottom: 3px solid transparent;
-
-    }
-
-
-    .Rest_Section .Card {
-        width: 100%;
-        height: 30%;
-    }
-
-    .wrapper nav ul {
-        justify-content: space-evenly;
-        width: 100%;
-        min-height: 80px;
-    }
-
-    .AboutWrapper {
-        width: 100%;
-    }
-
-    .two {
-        width: 100%;
-    }
-
-
-
-    .Rest_Section {
-        order: 2;
-        padding: 0 30px;
-    }
-
-    .Rest_Section .Card {
-        min-height: 200px;
-    }
-
-
-
-    .FlexGrid {
-        flex-wrap: nowrap;
-        min-height: 1100px;
-    }
-
-    .main-wrapper {
-        width: 100%;
         max-width: 375px;
-    }
-
-    .main-wrapper {
-        padding: 0px;
+        padding: 50px 0px;
     }
 
 
+    .noListStyle {
+        padding-inline-end: 0px;
+    }
+
+    .FiltersWrapper ul {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .FiltersWrappe ul li {
+        width: 100%;
+    }
 
     .Rest_Section {
         width: 100%;
-        margin: 0px;
-        row-gap: 40px;
-    }
-
-
-
-    /* Tablet version */
-    @media only screen and (min-width: 820px) {
-
-
-
-
-        .Rest_Section {
-            width: 100%;
-            justify-content: space-evenly;
-            gap: 20px;
-
-        }
-
-
-
-
-        .FiltersWrapper {
-            align-items: center;
-        }
-
-
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
     }
 
-    /* Desktp version */
-    @media only screen and (min-width:962px) {
-        .Rest_Section {
-            width: 100%;
-            height: 100%;
-        }
-
-
+    .Rest_Section .Image {
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
     }
+
+
+}
+
+/* Tablet version */
+@media only screen and (min-width: 820px) {}
+
+/* Desktp version */
+@media only screen and (min-width:962px) {}
