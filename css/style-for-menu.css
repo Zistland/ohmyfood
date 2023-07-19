@@ -9,16 +9,25 @@
 
 }
 
+h1,
+h2 {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: white;
     color: black;
     font-size: medium;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
 
 }
+
 .heading {
     font-weight: 900;
     padding: 0px;
@@ -35,9 +44,7 @@ body {
 
 .img-ohmyfood {
     width: 100%;
-    height: 140%;
-    padding-inline-start: 540px;
-
+    height: 100%;
 }
 
 .NavListItem {
@@ -51,6 +58,7 @@ nav {
     background-color: #f2f2f2;
     height: 150px;
 }
+
 .SearchBtn .fa-search {
     display: none;
     width: 100%;
@@ -59,7 +67,9 @@ nav {
 
 .SearchInput {
     min-height: 42px;
-    width: 20em;
+    min-width: 20em;
+    width: 100%;
+
     border: 1px solid #F2F2F2;
     display: flex;
 
@@ -71,7 +81,7 @@ nav {
     display: flex;
     justify-content: center;
     color: black;
-  
+
 }
 
 .SearchInput .SearchTxt {
@@ -84,7 +94,7 @@ nav {
     width: 100%;
     background-color: lightgrey;
     font-weight: bolder;
-   
+
 }
 
 .SearchBtn i {
@@ -95,7 +105,7 @@ nav {
 .SearchInput .SearchBtn:hover,
 .SearchInput .SearchBtn:active {
     background-color: grey;
-  
+
 }
 
 .btn {
@@ -103,7 +113,7 @@ nav {
     padding: 10px 20px;
     font-size: 20px;
     transition: 0.8s;
- 
+
 }
 
 .btn1 {
@@ -112,7 +122,7 @@ nav {
     border-radius: 20px;
     height: 48px;
     width: 245px;
-   
+
 }
 
 
@@ -141,14 +151,15 @@ a {
 
 
 .FiltersWrapper ul li {
-    background-color:white;
+    background-color: #F2F2F2;
     border-radius: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-weight: 800;
-    padding-right: 160px;
-    width: 440px;
+    padding-right: 10px;
+    min-width: 280px;
+    max-width: 280px;
 
 }
 
@@ -160,13 +171,12 @@ a {
     align-items: center;
     justify-content: center;
     font-size: large;
-    display: flex;
-flex-direction: row;
+
 }
 
 
 i:hover {
-    color: #99E2D0;
+    color: #9356DC;
 
 }
 
@@ -175,6 +185,9 @@ i:hover {
 .wrapper {
     width: 100%;
     justify-content: space-between;
+    justify-content: center;
+    min-height: 60px;
+    align-items: center;
 }
 
 .wrapper ul {
@@ -186,7 +199,7 @@ i:hover {
 
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
-    background-color: #99E2D0;
+    background-color: #FF79DA;
 }
 
 
@@ -201,30 +214,39 @@ i:hover {
 
 label {
     font-weight: 900;
-    padding-inline-start:15px;
+    padding-inline-start: 15px;
 
 }
 
 
 .Rest_Section {
     width: 100%;
-    height: 100%;
-   
-   
-}
-.Rest_Section {
-    width: 100%;
-    background-color:#F2F2F2;
+
+
 }
 
+.Rest_Section {
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.FiltersSection nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    gap: 10px;
+    text-align: center;
+}
 
 .Rest_Section .Card {
     border-radius: 10px;
-    height: 350px;
     box-sizing: border-box;
     box-shadow: 0 0 20px #00000080;
-    margin: 15px;
     background-color: transparent;
+    margin: 20px;
+    height: 190px;
 }
 
 .Rest_Section .Card .ImageWrapper {
@@ -238,7 +260,7 @@ label {
     width: 100%;
     height: 110%;
     object-fit: cover;
-  
+
 }
 
 .Rest_Section .Card h3,
@@ -277,46 +299,53 @@ footer.FooterWrapper {
 
 
 
-@media only screen and (max-width:768px)  {
+@media only screen and (max-width:768px) {
+
+    .FiltersWrapper {
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        max-width: 375px;
+        padding: 50px 0px;
+    }
 
 
+    .noListStyle {
+        padding-inline-end: 0px;
+    }
 
-.Rest_Section {
-    width: 100%;
-    height:100% ;
-    display: flex;
-    flex-direction: column;
+    .FiltersWrapper ul {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .FiltersWrappe ul li {
+        width: 100%;
+    }
+
+    .Rest_Section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Rest_Section .Image {
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+    }
+
 
 }
-  .Rest_Section .Card {
-    width: 23%;
-    height: 12%;
-   
-  }
-      .Rest_Section .Image {
-         width: 100%;
-         height: 120%;
-         object-fit: cover;
-      }
 
+/* Tablet version */
+@media only screen and (min-width: 820px) {}
 
-    }
-
-    /* Tablet version */
-    @media only screen and (min-width: 820px) {
-
-
-
-
-    }
-
-    /* Desktp version */
-    @media only screen and (min-width:962px) {
-       
-
-
-    }
-  
+/* Desktp version */
+@media only screen and (min-width:962px) {}
   
   
   
