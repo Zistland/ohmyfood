@@ -173,8 +173,9 @@ sup {
 
 img {
     border-style: none;
-    width: 300px;
+    width: 414px;
     height: 138px;
+    object-fit: cover;
 }
 
 /* Forms

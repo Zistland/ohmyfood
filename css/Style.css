@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
+   
 
 }
 
@@ -39,6 +39,7 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
 }
 
 
@@ -205,7 +206,7 @@ i:hover {
 
 .FiltersSection {
     width: 100%;
-    flex-direction: column;
+
 
 }
 
@@ -228,6 +229,7 @@ label {
 .Rest_Section {
     width: 100%;
     background-color: #F2F2F2;
+
 }
 
 .FiltersSection nav {
@@ -247,7 +249,8 @@ label {
     background-color: transparent;
     margin: 20px;
     height: 190px;
-}
+    
+   }
 
 .Rest_Section .Card .ImageWrapper {
     height: 55%;
@@ -267,8 +270,6 @@ label {
 .Rest_Section .Card p,
 .Rest_Section .Card .RateWrapper {
     padding-left: 10px;
-    justify-content: end;
-    display: flex;
     padding-inline-end: 30px;
     padding-top: 6px;
 }
@@ -291,7 +292,7 @@ label {
 
 footer.FooterWrapper {
     background-color: #333333;
-    color: white;
+    color:white;
     width: 100%;
     box-sizing: border-box;
     padding-block-start: 20px;
@@ -338,11 +339,19 @@ footer.FooterWrapper {
         object-fit: cover;
     }
 
-
+    .FiltersSection {
+        width: 100%;
+        flex-direction: column;
+    
+    }
 }
 
 /* Tablet version */
 @media only screen and (min-width: 820px) {}
 
 /* Desktp version */
-@media only screen and (min-width:962px) {}
+@media only screen and (min-width:962px) {
+
+    
+
+}

@@ -4,175 +4,49 @@
     --bookiGrey: #F2F2F2;
 }
 
-* {
-    box-sizing: border-box;
-
-}
-
 h1,
-h2 {
+h2,h3 {
     font-family: 'Shrikhand', sans-serif;
 }
 
 
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color: black;
-    font-size: medium;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-
+    background-color:#f2f2f2;
+ 
 }
 
-.heading {
-    font-weight: 900;
-    padding: 0px;
-    margin: 0px;
-}
-
-.heading-section {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.img-ohmyfood {
-    width: 100%;
-    height: 100%;
-}
-
-.NavListItem {
-    display: flex;
-    justify-content: center;
-
-
-}
-
-nav {
-    background-color: #f2f2f2;
-    height: 150px;
-}
-
-.SearchBtn .fa-search {
-    display: none;
-    width: 100%;
-}
-
-
-.SearchInput {
-    min-height: 42px;
-    min-width: 20em;
-    width: 100%;
-
-    border: 1px solid #F2F2F2;
-    display: flex;
-
-}
-
-
-
-.SearchInput .fa-location-dot {
-    display: flex;
-    justify-content: center;
-    color: black;
-
-}
-
-.SearchInput .SearchTxt {
-    color: black;
-    font-weight: bolder;
-
-}
-
-.SearchInput .SearchBtn {
-    width: 100%;
-    background-color: lightgrey;
-    font-weight: bolder;
-
-}
-
-.SearchBtn i {
-    background-color: transparent;
-}
-
-
-.SearchInput .SearchBtn:hover,
-.SearchInput .SearchBtn:active {
-    background-color: grey;
-
-}
-
-.btn {
-    color: var(--bookiBlue);
-    padding: 10px 20px;
-    font-size: 20px;
-    transition: 0.8s;
-
-}
-
-.btn1 {
+button {
     color: white;
     background-color: #FF79DA;
     border-radius: 20px;
-    height: 48px;
-    width: 245px;
-
+    padding: 15px 70px;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.btn1:hover {
+button:hover,
+button:focus-visible {
     background-color: #9356DC;
 
 }
 
-a {
-    text-decoration: none;
-}
 
-.FiltersWrapper {
-    align-items: center;
-}
-
-.noListStyle {
-    list-style: none;
-    list-style-type: none;
-}
-
-.noListStyle {
-    gap: 20px;
-    padding-inline-end: 70px;
-}
 
 
 .FiltersWrapper ul li {
-    background-color: #F2F2F2;
+    background-color:white;
     border-radius: 1em;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: 800;
-    padding-right: 10px;
-    min-width: 280px;
-    max-width: 280px;
-
+  width: 350px;
+  height: 30px;
+ display: flex;
+flex-wrap: wrap;
+padding: 20px;
 }
 
 
-.FiltersWrapper ul li i {
-    width: 70px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
-
-}
 
 
 i:hover {
@@ -188,6 +62,7 @@ i:hover {
     justify-content: center;
     min-height: 60px;
     align-items: center;
+    
 }
 
 .wrapper ul {
@@ -195,17 +70,19 @@ i:hover {
     justify-content: center;
     align-items: center;
     margin: 0px;
+  
 }
 
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
-    background-color: #FF79DA;
+    background-color: #99E2D0;
+
 }
 
 
 .FiltersSection {
     width: 100%;
-    flex-direction: column;
+    
 
 }
 
@@ -219,15 +96,11 @@ label {
 }
 
 
-.Rest_Section {
-    width: 100%;
 
-
-}
-
-.Rest_Section {
+.Full_Section {
     width: 100%;
     background-color: #F2F2F2;
+
 }
 
 .FiltersSection nav {
@@ -240,35 +113,38 @@ label {
     text-align: center;
 }
 
-.Rest_Section .Card {
+.Full_Section .Card {
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0 0 20px #00000080;
     background-color: transparent;
     margin: 20px;
     height: 190px;
-}
+    
+   }
 
-.Rest_Section .Card .ImageWrapper {
+.Full_Section .Card .ImageWrapper {
     height: 55%;
     margin-bottom: 10px;
 }
 
 
+.noListStyle {
+    padding-inline-start:0px;
+    gap: 20px;
+}
 
-.Rest_Section .Image {
+.Full_Section .Image {
     width: 100%;
     height: 110%;
     object-fit: cover;
 
 }
 
-.Rest_Section .Card h3,
-.Rest_Section .Card p,
-.Rest_Section .Card .RateWrapper {
+.Full_Section .Card h3,
+.Full_Section .Card p,
+.Full_Section .Card .RateWrapper {
     padding-left: 10px;
-    justify-content: end;
-    display: flex;
     padding-inline-end: 30px;
     padding-top: 6px;
 }
@@ -291,7 +167,7 @@ label {
 
 footer.FooterWrapper {
     background-color: #333333;
-    color: white;
+    color:white;
     width: 100%;
     box-sizing: border-box;
     padding-block-start: 20px;
@@ -311,42 +187,35 @@ footer.FooterWrapper {
 
 
     .noListStyle {
-        padding-inline-end: 0px;
+        padding-inline-start:0px;
     }
 
     .FiltersWrapper ul {
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
+        padding-inline-start: 20px;
     }
 
     .FiltersWrappe ul li {
         width: 100%;
     }
 
-    .Rest_Section {
+  
+
+    .FiltersSection {
         width: 100%;
-        height: 100%;
-        display: flex;
         flex-direction: column;
-
+    
     }
-
-    .Rest_Section .Image {
-        width: 100%;
-        height: 120%;
-        object-fit: cover;
-    }
-
-
 }
 
 /* Tablet version */
 @media only screen and (min-width: 820px) {}
 
 /* Desktp version */
-@media only screen and (min-width:962px) {}
-  
-  
-  
- 
+@media only screen and (min-width:962px) {
+
+    
+
+}
