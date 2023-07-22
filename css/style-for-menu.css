@@ -13,9 +13,21 @@ h2,h3 {
 body {
     font-family: 'Roboto', sans-serif;
     background-color:#F2F2F2;
- 
+    color: black;
+    font-size: medium;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
  
 }
+.wrapper {
+    width: 100%;
+    justify-content: space-between;
+    justify-content: center;
+    min-height: 60px;
+    align-items: center;
+}
+
 
 button {
     color: white;
@@ -59,34 +71,22 @@ padding: 20px;
 label {
     font-weight: 900;
     padding-inline-start: 15px;
-    display: flex;
-    flex-wrap: wrap;
+   
 }
-
-
 
 .noListStyle {
     padding-inline-start:0px;
     gap: 20px;
 }
 
-
-
-.Full_Section .Card h3,
-.Full_Section .Card p,
-.Full_Section .Card .RateWrapper {
-    padding-left: 10px;
-    padding-inline-end: 30px;
-    padding-top: 6px;
-}
-
-
 .wrapper,
 .FiltersSection,
 .FiltersWrapper,
 .FiltersWrapper ul {
     display: flex;
+    flex-wrap: wrap;
 }
+
 
 
 .FooterWrapper {
@@ -150,3 +150,35 @@ footer.FooterWrapper {
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+
+   
+
+   
+   
+
+
