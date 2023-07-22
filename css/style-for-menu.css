@@ -12,7 +12,8 @@ h2,h3 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color:#f2f2f2;
+    background-color:#F2F2F2;
+ 
  
 }
 
@@ -22,9 +23,6 @@ button {
     border-radius: 20px;
     padding: 15px 70px;
     font-size: 20px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 button:hover,
@@ -34,11 +32,9 @@ button:focus-visible {
 }
 
 
-
-
 .FiltersWrapper ul li {
-    background-color:white;
-    border-radius: 1em;
+background-color:white;
+ border-radius: 1em;
   width: 350px;
   height: 30px;
  display: flex;
@@ -47,31 +43,6 @@ padding: 20px;
 }
 
 
-
-
-i:hover {
-    color: #9356DC;
-
-}
-
-
-
-.wrapper {
-    width: 100%;
-    justify-content: space-between;
-    justify-content: center;
-    min-height: 60px;
-   
-    
-}
-
-.wrapper ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-  
-}
 
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
@@ -82,51 +53,16 @@ i:hover {
 
 .FiltersSection {
     width: 100%;
-    
 
 }
-
-
-
 
 label {
     font-weight: 900;
     padding-inline-start: 15px;
-
-}
-
-
-
-.Full_Section {
-    width: 100%;
-    background-color: #F2F2F2;
-
-}
-
-.FiltersSection nav {
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 30px;
-    gap: 10px;
-    text-align: center;
 }
 
-.Full_Section .Card {
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px #00000080;
-    background-color: transparent;
-    margin: 20px;
-    height: 190px;
-    
-   }
-
-.Full_Section .Card .ImageWrapper {
-    height: 55%;
-    margin-bottom: 10px;
-}
 
 
 .noListStyle {
@@ -134,12 +70,7 @@ label {
     gap: 20px;
 }
 
-.Full_Section .Image {
-    width: 100%;
-    height: 110%;
-    object-fit: cover;
 
-}
 
 .Full_Section .Card h3,
 .Full_Section .Card p,
