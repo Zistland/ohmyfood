@@ -107,7 +107,7 @@ footer.FooterWrapper {
 
 
 
-@media only screen and (max-width:768px) {
+@media  only screen and (max-width:768px) {
 
     .FiltersWrapper {
         flex-wrap: wrap;
