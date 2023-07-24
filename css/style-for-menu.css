@@ -41,7 +41,12 @@ button:hover,
 button:focus-visible {
     background-color: #9356DC;
 
-}
+    }
+
+
+
+
+
 
 
 .FiltersWrapper ul li {
@@ -105,6 +110,9 @@ footer.FooterWrapper {
     padding-block-start: 20px;
 }
 
+
+
+    
 
 
 @media  only screen and (max-width:768px) {
