@@ -301,19 +301,16 @@ footer.FooterWrapper {
 }
 
 /* The animation code */
-@keyframes example {
-    0%   {background-color: red;}
-    30%  {background-color: orange;}
-    50%  {background-color: green;}
-    100% {background-color: blue;}
+@keyframes  {
+
   }
   
   /* The element to apply the animation to */
   div {
     width: 100px;
     height: 100px;
-    background-color: red;
-    animation-name: example;
+    background-color:white;
+    animation-name
     animation-duration: 4s;
   }
 
