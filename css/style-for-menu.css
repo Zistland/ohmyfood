@@ -31,16 +31,20 @@ body {
 
 button {
     color: white;
-    background-color: #FF79DA;
-    border-radius: 20px;
+    background-color: #FF79DA ;
+    border-radius: 20px ;
     padding: 15px 70px;
     font-size: 20px;
+    border: 4px solid transparent;
+    position: relative;
+    transition: all 450ms;
+
 }
 
 button:hover,
 button:focus-visible {
     background-color: #9356DC;
-
+    transform: scale(1.13);
     }
 
 
