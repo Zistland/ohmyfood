@@ -300,6 +300,23 @@ footer.FooterWrapper {
     padding-block-start: 20px;
 }
 
+/* The animation code */
+@keyframes example {
+    0%   {background-color: red;}
+    30%  {background-color: orange;}
+    50%  {background-color: green;}
+    100% {background-color: blue;}
+  }
+  
+  /* The element to apply the animation to */
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
 
 
 @media only screen and (max-width:768px) {
