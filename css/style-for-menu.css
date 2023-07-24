@@ -64,13 +64,13 @@ padding: 20px;
 }
 
 
-
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
-    background-color: #99E2D0;
+    background-color:#99E2D0;
     
 
 }
+
 
 
 .FiltersSection {
@@ -96,8 +96,13 @@ label  {
     display: flex;
     flex-wrap: wrap;
 }
+.fa-solid {
+    background-color:#99E2D0;
+    color:white;
+    justify-content: space-between;
+    border-radius: 30px 30px;
 
-
+}
 
 .FooterWrapper {
     gap: 40px;
