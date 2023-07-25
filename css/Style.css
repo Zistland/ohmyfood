@@ -1,33 +1,3 @@
-:root {
-    --bookiBlue: grey;
-    --bookiLightBlue: #DEEBFF;
-    --bookiGrey: #F2F2F2;
-}
-
-* {
-    box-sizing: border-box;
-
-}
-
-h1,
-h2 {
-    font-family: 'Shrikhand', sans-serif;
-}
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color: black;
-    font-size: medium;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-
-}
-
 .heading {
     font-weight: 900;
     padding: 0px;
@@ -41,6 +11,9 @@ body {
     align-items: center;
 
 }
+
+
+
 
 
 .img-ohmyfood {
@@ -109,32 +82,6 @@ nav {
 
 }
 
-.btn {
-    color: var(--bookiBlue);
-    padding: 10px 20px;
-    font-size: 20px;
-    transition: 0.8s;
-
-}
-
-.btn1 {
-    color: white;
-    background-color: #FF79DA;
-    border-radius: 20px;
-    height: 48px;
-    width: 245px;
-    border: 4px solid transparent;
-    position: relative;
-    transition: all 450ms;
-
-}
-
-
-.btn1:hover {
-    background-color: #9356DC;
-    transform: scale(1.13);
-
-}
 
 a {
     text-decoration: none;
@@ -152,6 +99,7 @@ a {
 .noListStyle {
     gap: 20px;
     padding-inline-end: 70px;
+    font-size:smaller;
 }
 
 
@@ -163,26 +111,31 @@ a {
     align-items: center;
     font-weight: 800;
     padding-right: 10px;
-    min-width: 280px;
-    max-width: 280px;
-    border: 4px solid transparent;
+    min-width: 325px;
+    max-width: 325px;
+    box-shadow: 0 0 10px #00000080;
     position: relative;
     transition: all 450ms;
 
+
 }
+
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
-    background-color:lavender;
+    background-color: lavender;
     transform: scale(1.13);
+}
+
+.FiltersWrapper ul li .numberIcon {
+    border-radius: 50%
 }
 
 
 .FiltersWrapper ul li i {
-    width: 70px;
-    height: 75px;
+    width: 40px;
+    height: 65px;
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: large;
 
 }
@@ -190,11 +143,14 @@ a {
 
 i:hover {
     color: #9356DC;
-    
+
 
 }
 
-
+.fa-1 {
+    background: #9356DC;
+    color: white;
+}
 
 .wrapper {
     width: 100%;
@@ -238,7 +194,7 @@ label {
 .Rest_Section {
     width: 100%;
     background-color: #F2F2F2;
-
+    height: fit-content !important;
 }
 
 .FiltersSection nav {
@@ -249,6 +205,7 @@ label {
     padding: 20px 30px;
     gap: 10px;
     text-align: center;
+   
 }
 
 .Rest_Section .Card {
@@ -258,13 +215,27 @@ label {
     background-color: transparent;
     margin: 20px;
     height: 190px;
-  
-   }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    
+
+}
 
 .Rest_Section .Card .ImageWrapper {
     height: 55%;
     margin-bottom: 10px;
-    
+    width: 100%;
+
+}
+
+.Rest_Section .Card h3 {
+    width: 60%;
+}
+
+.Rest_Section .Card .RateWrapper {
+    width: 10%;
 }
 
 
@@ -282,7 +253,7 @@ label {
     padding-left: 10px;
     padding-inline-end: 30px;
     padding-top: 6px;
-    
+
 }
 
 
@@ -303,7 +274,7 @@ label {
 
 footer.FooterWrapper {
     background-color: #333333;
-    color:white;
+    color: white;
     width: 100%;
     box-sizing: border-box;
     padding-block-start: 20px;
@@ -321,7 +292,7 @@ footer.FooterWrapper {
         height: fit-content;
         max-width: 375px;
         padding: 50px 0px;
-        
+
     }
 
 
@@ -356,7 +327,7 @@ footer.FooterWrapper {
     .FiltersSection {
         width: 100%;
         flex-direction: column;
-    
+
     }
 }
 
@@ -364,8 +335,4 @@ footer.FooterWrapper {
 @media only screen and (min-width: 820px) {}
 
 /* Desktp version */
-@media only screen and (min-width:962px) {
-
-    
-
-}
+@media only screen and (min-width:962px) {}

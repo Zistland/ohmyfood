@@ -5,21 +5,23 @@
 }
 
 h1,
-h2,h3 {
+h2,
+h3 {
     font-family: 'Shrikhand', sans-serif;
 }
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color:#F2F2F2;
+    background-color: #F2F2F2;
     color: black;
     font-size: medium;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
- 
+
 }
+
 .wrapper {
     width: 100%;
     justify-content: space-between;
@@ -29,45 +31,21 @@ body {
 }
 
 
-button {
-    color: white;
-    background-color: #FF79DA ;
-    border-radius: 20px ;
-    padding: 15px 70px;
-    font-size: 20px;
-    border: 4px solid transparent;
-    position: relative;
-    transition: all 450ms;
-
-}
-
-button:hover,
-button:focus-visible {
-    background-color: #9356DC;
-    transform: scale(1.13);
-    }
-
-
-
-
-
-
-
 .FiltersWrapper ul li {
-background-color:white;
- border-radius: 1em;
-  width: 350px;
-  height: 30px;
- display: flex;
-flex-wrap: wrap;
-padding: 20px;
+    background-color: white;
+    border-radius: 1em;
+    width: 337px;
+    height: 63px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
-    background-color:#99E2D0;
-    
+    background-color: #99E2D0;
+
 
 }
 
@@ -78,14 +56,15 @@ padding: 20px;
 
 }
 
-label  {
+label {
     font-weight: 900;
     padding-inline-start: 15px;
-   
-}
+       }
+
+
 
 .noListStyle {
-    padding-inline-start:0px;
+    padding-inline-start: 0px;
     gap: 20px;
 }
 
@@ -96,9 +75,10 @@ label  {
     display: flex;
     flex-wrap: wrap;
 }
-.fa-solid {
-    background-color:#99E2D0;
-    color:white;
+
+.fa-circle-check {
+    background-color: transparent;
+    color: #99E2D0;
     justify-content: space-between;
     border-radius: 30px 30px;
 
@@ -113,7 +93,7 @@ label  {
 
 footer.FooterWrapper {
     background-color: #333333;
-    color:white;
+    color: white;
     width: 100%;
     box-sizing: border-box;
     padding-block-start: 20px;
@@ -121,10 +101,10 @@ footer.FooterWrapper {
 
 
 
-    
 
 
-@media  only screen and (max-width:768px) {
+
+@media only screen and (max-width:768px) {
 
     .FiltersWrapper {
         flex-wrap: wrap;
@@ -136,7 +116,7 @@ footer.FooterWrapper {
 
 
     .noListStyle {
-        padding-inline-start:0px;
+        padding-inline-start: 0px;
     }
 
     .FiltersWrapper ul {
@@ -150,12 +130,12 @@ footer.FooterWrapper {
         width: 100%;
     }
 
-  
+
 
     .FiltersSection {
         width: 100%;
         flex-direction: column;
-    
+
     }
 }
 
@@ -163,40 +143,4 @@ footer.FooterWrapper {
 @media only screen and (min-width: 820px) {}
 
 /* Desktp version */
-@media only screen and (min-width:962px) {
-
-    
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-
-   
-
-   
-   
-
-
+@media only screen and (min-width:962px) {}
