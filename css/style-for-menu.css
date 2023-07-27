@@ -9,15 +9,14 @@ h2,
 h3 {
     font-family: 'Shrikhand', sans-serif;
 }
-
 .RateWrapper{
-  margin-inline-start:350px;
-  margin-bottom: 20px;
- 
-    
-   
-    
-}
+   padding-left: 100%;
+   padding-bottom: -10%;
+      
+     
+      }  
+
+
 
 
 body {
@@ -33,6 +32,7 @@ body {
 }
 .fa-heart {
     color:grey;
+    
    
 }
 
@@ -48,7 +48,6 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-   
     position: relative;
     transition: all 450ms;
 
@@ -66,12 +65,10 @@ body {
 
 
 .wrapper {
-    width: 100%;
-    justify-content: space-between;
-    justify-content: center;
-    min-height: 60px;
-    align-items: center;
-}
+    width: 80%;
+    padding-top: 25px;
+    margin-bottom: -14px;
+  }
 
 
 .FiltersWrapper ul li {
@@ -131,9 +128,9 @@ label {
 }
 
 .noListStyle {
-    padding-inline-start: 0px;
+  
     gap: 20px;
-    padding-top: 20px;
+    
 }
 
 .wrapper,
@@ -143,6 +140,13 @@ label {
     display: flex;
     flex-wrap: wrap;
 }
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
 
 
 .FooterWrapper {
@@ -173,7 +177,7 @@ footer.FooterWrapper {
         width: 100%;
         height: fit-content;
         max-width: 390px;
-        padding: 50px 0px;
+
     }
 
 
@@ -182,9 +186,7 @@ footer.FooterWrapper {
     }
 
     .FiltersWrapper ul {
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
+        
        
     }
 
