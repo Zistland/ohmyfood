@@ -99,7 +99,7 @@ a {
 .noListStyle {
     gap: 20px;
     padding-inline-end: 70px;
-    font-size:smaller;
+    font-size: smaller;
 }
 
 
@@ -116,42 +116,45 @@ a {
     box-shadow: 0 0 10px #00000080;
     position: relative;
     transition: all 450ms;
+    min-height: 55px;
+    padding-left: 25px;
 
 
 }
 
 .FiltersWrapper ul li:hover,
 .FiltersWrapper ul li:active {
-    background-color: lavender;
+    background-color:lavender;
     transform: scale(1.13);
 }
 
 .FiltersWrapper ul li .numberIcon {
-    border-radius: 50%
-}
-
-
-.FiltersWrapper ul li i {
-    width: 40px;
-    height: 65px;
-    display: flex;
-    align-items: center;
-    font-size: large;
-
-}
-
-
-i:hover {
-    color: #9356DC;
-
-
-}
-
-.fa-1 {
+    border-radius: 50%;
+    padding: 5px;
+    justify-content: center;
+    position: absolute;
+    left: -20px;
     background: #9356DC;
     color: white;
 }
 
+.FiltersWrapper ul li i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+
+
+}
+
+
+
+i:hover {
+    color:#9356DC;
+
+
+}
 .wrapper {
     width: 100%;
     justify-content: space-between;
@@ -166,6 +169,8 @@ i:hover {
     align-items: center;
     margin: 0px;
 }
+
+
 
 
 
@@ -205,8 +210,9 @@ label {
     padding: 20px 30px;
     gap: 10px;
     text-align: center;
-   
+
 }
+
 
 .Rest_Section .Card {
     border-radius: 10px;
@@ -218,9 +224,13 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:center;
-    
+    align-items: flex-start;
+    overflow: hidden;
 
+}
+
+.Rest_Section .Card p {
+    width: 100%;
 }
 
 .Rest_Section .Card .ImageWrapper {
@@ -278,6 +288,8 @@ footer.FooterWrapper {
     width: 100%;
     box-sizing: border-box;
     padding-block-start: 20px;
+    padding-inline-start: 15px;
+    gap: 20px;
 }
 
 
