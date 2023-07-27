@@ -147,14 +147,13 @@ a {
 
 
 }
-
-
-
 i:hover {
     color:#9356DC;
 
 
-}
+} 
+
+
 .wrapper {
     width: 100%;
     justify-content: space-between;
@@ -169,7 +168,9 @@ i:hover {
     align-items: center;
     margin: 0px;
 }
-
+.btn1 {
+    margin-left: none;
+}
 
 
 

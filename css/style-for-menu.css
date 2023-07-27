@@ -10,10 +10,8 @@ h3 {
     font-family: 'Shrikhand', sans-serif;
 }
 
-i:hover {
-    color:#9356DC;
-
-
+.Full-section {
+    width: 20px;
 }
 
 
@@ -29,6 +27,35 @@ body {
 
 }
 
+.fa-heart:hover {
+    color:#9356DC;
+} 
+
+
+
+.check-icon {
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    position: relative;
+    transition: all 450ms;
+
+}
+
+.check-icon:hover,
+.check-icon:active {
+    background-color:#99E2D0;
+    color:white;
+    transform: scale(1.13);
+}
+
+
+
+
+
 .wrapper {
     width: 100%;
     justify-content: space-between;
@@ -41,8 +68,8 @@ body {
 .FiltersWrapper ul li {
     background-color: white;
     border-radius: 1em;
-    width: 337px;
-    height: 63px;
+    width: 360px;
+    height: 65px;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -50,12 +77,7 @@ body {
 }
 
 
-.FiltersWrapper ul li:hover,
-.FiltersWrapper ul li:active {
-    background-color: #99E2D0;
 
-
-}
 
 
 
@@ -91,7 +113,7 @@ label {
     height: 100%;
     border-radius: 0;
     width: 60px;
-    background-color: #99E2D0;
+    background-color:transparent;
     color: white;
 }
 
@@ -102,6 +124,7 @@ label {
 .noListStyle {
     padding-inline-start: 0px;
     gap: 20px;
+    padding-top: 20px;
 }
 
 .wrapper,
@@ -115,7 +138,7 @@ label {
 
 .FooterWrapper {
     gap: 40px;
-    margin-top: 160px;
+    margin-top: 60px;
 }
 
 
@@ -140,7 +163,7 @@ footer.FooterWrapper {
         flex-wrap: wrap;
         width: 100%;
         height: fit-content;
-        max-width: 375px;
+        max-width: 390px;
         padding: 50px 0px;
     }
 
@@ -153,7 +176,7 @@ footer.FooterWrapper {
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-        padding-inline-start: 20px;
+       
     }
 
     .FiltersWrappe ul li {
