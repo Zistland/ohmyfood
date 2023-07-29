@@ -191,17 +191,23 @@ label {
     padding-inline-start: 15px;
 
 }
+
+
+
+.ImageWrapper
 .text {
     color:teal;
     font-size:20px;
     background-color:#99E2D0;
     width: 25%;
-    height: 5%;
+    height: 4%;
     border-radius: 3px;
     font-style:bold;
     position: absolute;
     top: 113%;
     left: 65%;
+    text-align: center;
+
 }
 
 
