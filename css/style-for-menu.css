@@ -1,7 +1,11 @@
 :root {
-    --bookiBlue: grey;
-    --bookiLightBlue: #DEEBFF;
-    --bookiGrey: #F2F2F2;
+    --primaryColor: #9356DC;
+    --secondaryColor: #FF79DA;
+    --tertiaryColor: #99E2D0;
+    --linearGradient: linear-gradient(333deg, rgba(127, 26, 189, 1) 0%, rgba(251, 74, 194, 1) 100%);
+    ;
+    --linearGradientLighten: linear-gradient(327deg, rgb(170, 128, 220) 0%, rgb(248, 147, 219) 100%);
+    ;
 }
 
 h1,
@@ -12,6 +16,7 @@ h3 {
 
 .RateWrapper {
     padding-left: 100%;
+    position: relative;
 }
 
 
@@ -25,30 +30,57 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-inline-start: 15px;
+    width: 100%;
 
 }
-.fa-heart {
-    position:absolute;
-    top: 31%;
-    left: 88%; 
+
+img {
+    border-style: none;
+    width: 370px;
+    height: 138px;
+    object-fit: cover;
 }
-.fa-heart:hover  {
-    background-color:transparent;
-    color: #9356DC;
+
+.RateWrapper .fa-solid {
+    opacity: 0;
+}
+
+.fa-heart {
+    position: absolute;
+    bottom: 20px;
+    left: 88%;
+
+}
+
+.RateWrapper:hover .fa-solid {
+    background: var(--linearGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
     animation: slideUp 1s ease-in-out 1 forwards;
+}
+
+.RateWrapper:hover .fa-regular {
+    background: var(--linearGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 1s ease-in-out color;
 }
 
 
 
 @keyframes slideUp {
     0% {
-        transform: translateY(100%);
+        transform: scale(0%);
+        opacity: 100%;
 
+        transform-origin: bottom;
     }
 
     100% {
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
 
@@ -56,7 +88,7 @@ body {
 
 
 .check-icon-wrapper {
-    height:50px;
+    height: 50px;
     width: 50px;
 }
 
@@ -85,6 +117,8 @@ body {
     color: white;
     animation: slideLeft 500ms ease-in-out 1 forwards;
 }
+
+
 
 .menu-item:hover .check-icon,
 .menu-item:active .check-icon {
@@ -126,6 +160,13 @@ body {
     margin-bottom: -14px;
 }
 
+.Full-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .FiltersWrapper ul li {
     background-color: white;
@@ -134,14 +175,39 @@ body {
     height: 65px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-label,
+.heading-label,
+.menu-item p {
+    width: 90%;
+    max-height: 30%;
+}
+
+.price-label {
+    text-align: end;
+}
+
+.check-icon-wrapper {
+    height: 100%;
+    align-self: flex-end;
 }
 
 .menu-item p {
     margin: 0;
+    padding-inline-start: 15px;
 }
 
+
+.menu-item:hover .price-label,
+.menu-item:hover .heading-label,
+.menu-item:hover p {
+    width: 70%;
+    transition: width ease-in 1s forwards;
+}
 
 
 
@@ -164,9 +230,6 @@ label {
     display: flex;
 }
 
-.heading-label {
-    width: 100%;
-}
 
 .check-icon {
     justify-content: center;
@@ -178,6 +241,7 @@ label {
     background-color: transparent;
     color: white;
 }
+
 .footer-menu {
     list-style: none;
     ;
@@ -234,64 +298,52 @@ footer.FooterWrapper {
 
 
 
-@media only screen and (max-width:768px) {
-
-    .FiltersWrapper {
-        flex-wrap: wrap;
-        width: 100%;
-        height: fit-content;
-        max-width: 390px;
-
-    }
-
-
-    .noListStyle {
-        padding-inline-start: 0px;
-    }
-
-
-    .FiltersWrappe ul li {
-        width: 100%;
-    }
-
-
-
-    .FiltersSection {
-        width: 100%;
-        flex-direction: column;
-
-    }
-}
-
 /* Tablet version */
 @media only screen and (min-width: 820px) {
     img {
-        width: 910px;
-    }
-
-    .btn1 {
-        margin-left: 300px;
-    }
-
-
-
-}
-
-/* Desktp version */
-@media only screen and (min-width:962px) {
-
-    img {
-        width: 1500px;
-    }
-
-    .btn1 {
-        margin-left: 650px;
+        width:1200px;
     }
 
     .fa-heart {
-        position:absolute;
-        top: 29%;
-        left: 53%; 
+        position: absolute;
+        left: 88%;
+    
     }
+   .FiltersWrapper {
+    padding-left: 60%;
+    padding-right: 40%;
+   }
+.btn1 {
+    left: 65px;
+
 
 }
+.FooterWrapper {
+    width: 1200px;
+}
+}
+
+/* Desktop version */
+@media only screen and (min-width:962px) {
+
+    .FiltersWrapper {
+        padding-left: 60%;
+        padding-right: 40%;
+        
+    }
+  
+        
+
+    img {
+        border-style: none;
+        width: 670px;
+        height: 138px;
+        object-fit: cover;
+    }
+      
+    
+
+    
+   
+
+ }

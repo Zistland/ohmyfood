@@ -1,3 +1,8 @@
+
+
+
+
+
 .heading {
     font-weight: 900;
     padding: 0px;
@@ -151,24 +156,40 @@ a {
     top: 29%;
     left: 53%; 
 }
-
-.fa-heart:hover  {
-    background-color:transparent;
-    color: #9356DC;
-    animation: slideUp 1s ease-in-out 1 forwards;
+.RateWrapper .fa-solid {
+    opacity: 0;
 }
 
 
+.RateWrapper:hover .fa-solid {
+    background: var(--linearGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+    animation: slideUp 1s ease-in-out 1 forwards;
+}
+
+.RateWrapper:hover .fa-regular {
+    background: var(--linearGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 1s ease-in-out color;
+}
 
 @keyframes slideUp {
     0% {
-        transform: translateY(100%);
+        transform: scale(0%);
+        opacity: 100%;
 
+        transform-origin: bottom;
     }
 
     100% {
-        transform: translateY(0);
+        transform: scale(1);
     }
+
 }
 
 
@@ -403,7 +424,27 @@ footer.FooterWrapper {
 }
 
 /* Tablet version */
-@media only screen and (min-width: 820px) {}
+@media only screen and (min-width: 820px) {
 
-/* Desktp version */
-@media only screen and (min-width:962px) {}
+   body {
+    display: flex;
+    flex-direction: column;
+   }
+
+    
+    
+  
+   }
+
+
+
+
+
+
+/* Desktop version */
+@media only screen and (min-width:962px) {
+    body {
+        display: flex;
+        flex-direction: column;
+       }
+}
