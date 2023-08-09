@@ -206,7 +206,7 @@ img {
 .menu-item:hover .heading-label,
 .menu-item:hover p {
     width: 70%;
-    transition: width ease-in 1s forwards;
+    transition: width ease-in 1s  forwards;
 }
 
 
@@ -293,7 +293,7 @@ footer.FooterWrapper {
     padding-inline-start: 15px;
 }
 
-
+@media only screen and (max-width:768px)
 
 
 
