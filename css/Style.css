@@ -157,6 +157,11 @@ a {
     font-size: smaller;
     padding-top: 20px;
 }
+a {
+    color:white;
+    text-decoration: none;
+}
+
 
 .FiltersWrapper ul li {
     background-color: #F2F2F2;

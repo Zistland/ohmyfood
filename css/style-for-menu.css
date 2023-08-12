@@ -15,20 +15,74 @@ h3 {
 
 }
 
-a {
+ a {
     color: black;
     text-decoration: none;
-}
+   }
+ 
 
-h2 {
-    padding-left: 30px;
-}
 
 .RateWrapper {
     padding-left: 90%;
     position: relative;
 }
 
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    animation: visuallyHide 4s ease-out 1 forwards;
+
+}
+
+
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #7449f5;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes visuallyHide {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    90% {
+        transform: scale(1)
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0)
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+
+    }
+
+}
 
 
 
@@ -192,9 +246,10 @@ img {
     flex-wrap: wrap;
     z-index: 2;
     margin-top: 40px;
-    background-color: lightgray;
+    background-color: #F2F2F2;
     border-radius: 20px;
     padding-top: 40px;
+    padding-left: 8px;
 
 }
 
@@ -365,7 +420,9 @@ footer.FooterWrapper {
     gap: 20px;
 }
 
-@media only screen and (max-width:768px) {}
+@media only screen and (max-width:768px) {
+
+}
 
 
 
@@ -406,8 +463,8 @@ footer.FooterWrapper {
 
     .btn1 {
         position: absolute;
-        top: 850px;
-        left: 510px;
+        top: 765px;
+        left: 315px;
     }
 }
 
@@ -446,7 +503,7 @@ footer.FooterWrapper {
 
     .btn1 {
         position: absolute;
-        top: 710px;
+        top: 605px;
         left: 675px;
     }
 
