@@ -1,12 +1,8 @@
-
-
-
-
-
 .heading {
     font-weight: 900;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 .heading-section {
@@ -17,6 +13,42 @@
 
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75 , visibility 0.75s;
+
+       }
+       .loader-hidden {
+        opacity: 0;
+        visibility: hidden;
+       }
+       .loader::after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid #dddddd;
+        border-top-color: #7449f5;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+       }
+    @keyframes loading  {
+        from  {
+            transform: rotate(0turn);
+                }
+                to {
+                    transform: rotate(1turn);
+                    
+                }
+        
+    }
 
 
 
@@ -115,14 +147,12 @@ a {
     justify-content: flex-start;
     align-items: center;
     font-weight: 800;
-    padding-right: 10px;
-    min-width: 325px;
-    max-width: 325px;
+    padding-right: 80px;
     box-shadow: 0 0 10px #00000080;
     position: relative;
     transition: all 450ms;
     min-height: 55px;
-    padding-left: 25px;
+    padding-left: 70px;
 
 
 }
@@ -155,8 +185,9 @@ a {
 
 .fa-heart {
     top: 29%;
-    left: 53%; 
+    left: 53%;
 }
+
 .RateWrapper .fa-solid {
     opacity: 0;
 }
@@ -237,10 +268,11 @@ a {
 
 
 label {
-    font-weight: 900;
+    font-weight:900;
     padding-inline-start: 15px;
 
 }
+
 
 
 
@@ -248,20 +280,28 @@ label {
     color: teal;
     font-size: 20px;
     background-color: #99E2D0;
-    width: 25%;
-    height: 4%;
+    width: 70px;
+    height: 40px;
     border-radius: 3px;
     font-style: italic;
     position: absolute;
-    top: 113%;
-    left: 65%;
+    top: 5%;
+    left: 75%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
 .Rest_Section {
     width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
 
 
 }
@@ -306,6 +346,8 @@ label {
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
+    position: relative;
+    align-items: center;
 
 }
 
@@ -323,6 +365,11 @@ label {
 
 .Rest_Section .Card h3 {
     width: 60%;
+}
+
+.Rest_Section .Card label,
+.Rest_Section .Card .RateWrapper {
+    margin-top: 20px
 }
 
 .Rest_Section .Card .RateWrapper {
@@ -361,6 +408,14 @@ label {
 
 }
 
+.RateWrapper {
+    display: grid;
+}
+
+.fa-heart {
+    grid-row: 1;
+    grid-column: 1;
+}
 
 
 footer.FooterWrapper {
@@ -401,6 +456,7 @@ footer.FooterWrapper {
 
     .FiltersWrappe ul li {
         width: 100%;
+    
     }
 
     .Rest_Section {
@@ -425,17 +481,68 @@ footer.FooterWrapper {
 }
 
 /* Tablet version */
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 768px) {
 
-   body {
-    display: flex;
-    flex-direction: column;
-   }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .Rest_Section {
+        flex-direction: row;
+
+    }
+
+    .Card {
+        max-width: 260px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .FiltersSection {
+        flex-direction: column;
+    }
+
+    .search-container {
+        width: 100%;
+
+    }
+
+    .FiltersSection nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .noListStyle {
+        padding: 0;
+    }
+
+
+
+    .FiltersWrapper {
+        width: 100%;
+        column-gap: 40px;
+        padding: 20px 40px;
+        flex-wrap: wrap;
+    }
+
+    .FiltersWrapper label {
+        width: 100%;
+    }
+
+    .FiltersWrapper ul {
+        column-gap: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     
-    
-  
-   }
+
+}
 
 
 
@@ -447,5 +554,44 @@ footer.FooterWrapper {
     body {
         display: flex;
         flex-direction: column;
-       }
+        flex-wrap: wrap;
+    }
+
+    .FiltersSection {
+        flex-direction: column;
+    }
+
+    .search-container {
+        width: 100%;
+
+    }
+
+    .FiltersSection nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .noListStyle {
+        padding: 0;
+    }
+
+
+
+    .FiltersWrapper {
+        width: 100%;
+        column-gap: 40px;
+        padding: 20px 40px;
+        flex-wrap: wrap;
+    }
+
+    .FiltersWrapper label {
+        width: 100%;
+    }
+
+    .FiltersWrapper ul {
+        column-gap: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }

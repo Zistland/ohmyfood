@@ -12,10 +12,11 @@ h1,
 h2,
 h3 {
     font-family: 'Shrikhand', sans-serif;
+    padding-left: 30px;
 }
 
 .RateWrapper {
-    padding-left: 100%;
+    padding-left: 90%;
     position: relative;
 }
 
@@ -33,6 +34,9 @@ body {
     width: 100%;
 
 }
+.btn1 {
+    left: 88px;
+}
 
 img {
     border-style: none;
@@ -42,6 +46,7 @@ img {
 }
 
 .RateWrapper .fa-solid {
+    color: black;
     opacity: 0;
 }
 
@@ -73,7 +78,7 @@ img {
 
 @keyframes slideUp {
     0% {
-        transform: scale(0%);
+        transform: scale(0);
         opacity: 100%;
 
         transform-origin: bottom;
@@ -148,12 +153,6 @@ img {
 }
 
 
-
-
-
-
-
-
 .wrapper {
     width: 80%;
     padding-top: 25px;
@@ -164,7 +163,7 @@ img {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+  
 }
 
 
@@ -206,7 +205,17 @@ img {
 .menu-item:hover .heading-label,
 .menu-item:hover p {
     width: 70%;
-    transition: width ease-in 1s  forwards;
+    animation: shrinkWidth ease-in 1s forwards;
+}
+
+@keyframes shrinkWidth {
+    from {
+        width: 90%;
+    }
+
+    to {
+        width: 70%;
+    }
 }
 
 
@@ -291,59 +300,75 @@ footer.FooterWrapper {
     box-sizing: border-box;
     padding-block-start: 20px;
     padding-inline-start: 15px;
+    gap: 20px;
 }
 
-@media only screen and (max-width:768px)
+@media only screen and (max-width:768px) {}
 
 
 
 
 /* Tablet version */
 @media only screen and (min-width: 820px) {
-    img {
-        width:1200px;
-    }
-
-    .fa-heart {
-        position: absolute;
-        left: 88%;
-    
-    }
-   .FiltersWrapper {
-    padding-left: 60%;
-    padding-right: 40%;
+   .Full-section {
+display: flex;
+flex-direction: row;
    }
+   
+    .FiltersWrapper ul {
+        column-gap: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .wrapper {
+        width: 80%;
+        justify-content:space-between;
+    }
+img {
+    width: 1200px ;
+
+}
 .btn1 {
-    left: 65px;
-
-
+    position: absolute;
+    top: 850px;
+    left: 460px;
 }
-.FooterWrapper {
-    width: 1200px;
-}
-}
+   }
 
 /* Desktop version */
 @media only screen and (min-width:962px) {
 
+
     .FiltersWrapper {
-        padding-left: 60%;
-        padding-right: 40%;
-        
+       
+        padding: 20px 70px;
+       
     }
-  
-        
 
-    img {
-        border-style: none;
-        width: 670px;
-        height: 138px;
-        object-fit: cover;
+
+    .FiltersWrapper ul {
+        column-gap: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-      
-    
+.wrapper {
+    width: 53%;
+    justify-content:space-between;
+}
+img {
+    width: 1500px ;
 
-    
-   
+}
+.btn1 {
+    position: absolute;
+    top: 710px;
+    left: 645px;
+}
 
- }
+
+
+
+}
