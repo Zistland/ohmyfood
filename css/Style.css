@@ -239,7 +239,7 @@ a {
 
 @keyframes slideUp {
     0% {
-        transform: scale(0%);
+        transform: scale(0);
         opacity: 100%;
 
         transform-origin: bottom;
