@@ -15,11 +15,11 @@ h3 {
 
 }
 
- a {
+a {
     color: black;
     text-decoration: none;
-   }
- 
+}
+
 
 
 .RateWrapper {
@@ -98,15 +98,16 @@ body {
 
 }
 
-.btn1 {
-    left: 88px;
-}
 
 img {
     border-style: none;
     width: 370px;
     height: 138px;
     object-fit: cover;
+}
+
+.btn1 {
+    margin-top: 40px;
 }
 
 .RateWrapper .fa-solid {
@@ -222,9 +223,13 @@ img {
 
 
 .wrapper {
-    width: 80%;
+    width: 100%;
     padding-top: 25px;
-    margin-bottom: -14px;
+    padding-bottom: 25px;
+    background-color: white;
+    padding-left: 20%;
+    gap: 40px;
+
 }
 
 .hero-image {
@@ -241,15 +246,21 @@ img {
 }
 
 .Full-section {
+    margin-top: 200px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     z-index: 2;
-    margin-top: 40px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding-top: 40px;
-    padding-left: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    height: fit-content;
+    padding-bottom: 80px;
 
 }
 
@@ -365,6 +376,8 @@ label {
 }
 
 
+
+
 .menu-item {
     opacity: 0;
     animation: appear 2s ease-out forwards 1;
@@ -397,15 +410,17 @@ label {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+}
+
+.Full-section h2 {
+    width: 100%;
 }
 
 
 
 .FooterWrapper {
     gap: 40px;
-    margin-top: 60px;
 }
 
 
@@ -420,24 +435,22 @@ footer.FooterWrapper {
     gap: 20px;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {}
 
+.FooterWrapper a {
+    color: white;
 }
-
-
 
 
 /* Tablet version */
 @media only screen and (min-width: 820px) {
 
-    .Full-section {
-        display: flex;
-        flex-direction: row;
-    }
 
     .Full-section {
         display: flex;
         flex-direction: column;
+        margin-top: 200px;
+
     }
 
     .FiltersWrapper ul {
@@ -461,11 +474,6 @@ footer.FooterWrapper {
 
     }
 
-    .btn1 {
-        position: absolute;
-        top: 765px;
-        left: 315px;
-    }
 }
 
 /* Desktop version */
@@ -501,11 +509,6 @@ footer.FooterWrapper {
 
     }
 
-    .btn1 {
-        position: absolute;
-        top: 605px;
-        left: 675px;
-    }
 
 
 
