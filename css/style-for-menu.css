@@ -461,15 +461,16 @@ footer.FooterWrapper {
         display: flex;
         flex-direction: column;
         margin-top: 200px;
+        justify-content:flex-start;
 
     }
 
     .FiltersWrapper ul {
         column-gap: 40px;
         display: flex;
-        justify-content:center;
         width: 100%;
         padding-left: 20px;
+      
        
     }
 
@@ -522,7 +523,9 @@ footer.FooterWrapper {
 
     }
 
-
+.Full-section {
+    padding-left: 150px;
+}
 
 
 
