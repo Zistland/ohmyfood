@@ -119,6 +119,7 @@ img {
     position: absolute;
     bottom: 20px;
     left: 88%;
+    font-size: 23px;
 
 }
 
@@ -268,7 +269,7 @@ img {
 .FiltersWrapper ul li {
     background-color: white;
     border-radius: 1em;
-    width: 360px;
+    width: 350px;
     height: 65px;
     display: flex;
     flex-wrap: wrap;
@@ -297,6 +298,7 @@ img {
 .menu-item p {
     margin: 0;
     padding-inline-start: 15px;
+    padding-top: 11px;
 }
 
 
@@ -329,6 +331,7 @@ img {
 label {
     font-weight: 900;
     padding-inline-start: 15px;
+    padding-top: 1px;
 }
 
 .menu-item {
@@ -464,9 +467,10 @@ footer.FooterWrapper {
     .FiltersWrapper ul {
         column-gap: 40px;
         display: flex;
-        justify-content: center;
+        justify-content:center;
         width: 100%;
         padding-left: 20px;
+       
     }
 
     .wrapper {
@@ -499,7 +503,7 @@ footer.FooterWrapper {
     .FiltersWrapper ul {
         column-gap: 40px;
         display: flex;
-        justify-content: center;
+        justify-content:flex-start;
         width: 100%;
     }
 
