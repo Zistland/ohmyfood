@@ -284,6 +284,7 @@ img {
 .menu-item p {
     width: 90%;
     max-height: 30%;
+    padding-right: 15px;
 }
 
 .price-label {
@@ -295,16 +296,30 @@ img {
     align-self: flex-end;
 }
 
+.menu-item {
+    justify-content: center;
+}
+
+.item-description {
+    width: 100%;
+    display: flex
+}
+
 .menu-item p {
     margin: 0;
     padding-inline-start: 15px;
-    padding-top: 11px;
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 25px;
+    white-space: nowrap;
 }
 
 
 .menu-item:hover .price-label,
 .menu-item:hover .heading-label,
-.menu-item:hover p {
+.menu-item:hover .item-description {
     width: 70%;
     animation: shrinkWidth ease-in 1s forwards;
 }
@@ -389,7 +404,7 @@ label {
     animation: appear 2s ease-out forwards 1;
 }
 
-.menu-item:nth-child(1) {}
+
 
 .menu-item:nth-child(2) {
     animation-delay: 0.75s;
@@ -443,15 +458,16 @@ footer.FooterWrapper {
 
 @media only screen and (max-width:768px) {
     .Full-section {
-            border-radius: 20px;
-            background-color:#F2F2F2;
-    
+        border-radius: 20px;
+        background-color: #F2F2F2;
+
     }
+
     .hero-image {
         height: 300px;
     }
 
-    }
+}
 
 /* Tablet version */
 @media only screen and (min-width: 820px) {
@@ -461,7 +477,8 @@ footer.FooterWrapper {
         display: flex;
         flex-direction: column;
         margin-top: 200px;
-        justify-content:flex-start;
+        justify-content: flex-start;
+        padding-left: 30px;
 
     }
 
@@ -470,8 +487,8 @@ footer.FooterWrapper {
         display: flex;
         width: 100%;
         padding-left: 20px;
-      
-       
+
+
     }
 
     .wrapper {
@@ -486,7 +503,7 @@ footer.FooterWrapper {
         width: 1200px;
 
     }
- 
+
 
 }
 
@@ -499,12 +516,12 @@ footer.FooterWrapper {
         padding: 20px 70px;
 
     }
-   
+
 
     .FiltersWrapper ul {
         column-gap: 40px;
         display: flex;
-        justify-content:flex-start;
+        justify-content: flex-start;
         width: 100%;
     }
 
@@ -523,9 +540,9 @@ footer.FooterWrapper {
 
     }
 
-.Full-section {
-    padding-left: 150px;
-}
+    .Full-section {
+        padding-left: 150px;
+    }
 
 
 
