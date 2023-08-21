@@ -213,7 +213,7 @@ img {
 
 @keyframes spin {
     0% {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
 
     }
 
@@ -282,9 +282,13 @@ img {
 .price-label,
 .heading-label,
 .menu-item p {
-    width: 90%;
+    width: 20%;
     max-height: 30%;
     padding-right: 15px;
+}
+
+.heading-label {
+    width: 80%;
 }
 
 .price-label {
@@ -308,7 +312,8 @@ img {
 .menu-item p {
     margin: 0;
     padding-inline-start: 15px;
-    max-width: 260px;
+    max-width: 300px;
+    width: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
